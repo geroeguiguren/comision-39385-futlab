@@ -1,0 +1,1049 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Gruppo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url(../assets/imagenes/fondo-retro.jpg);
+    background-size: cover;
+    width: 100vw;
+}
+
+/*----------------------------HEADER----------------------------------*/
+
+
+header {
+    background-color: rgb(53, 53, 53);
+    height: 10vh;
+    background-image: url(../assets/imagenes/cancha.jpg);
+    display: flex;
+    width: 100%;
+    left: 0; 
+	top: 0; 
+	position: fixed; 
+}
+a {
+    text-decoration: none;
+}
+
+.header-titulo {
+    width: 10%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.titulo {
+    font-size: 2vw;
+    font-family: 'Changa One', cursive;
+    letter-spacing: 0.9px;
+    color: antiquewhite;
+    transition: 0.5s;
+}
+
+.titulo:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.p-titulo {
+    text-decoration: line-through;
+    font-size: 1vw;
+    font-family: 'Gruppo', cursive;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+.pelota-titulo {
+    position: relative;
+    width: 5vw;
+    height: 10vh;
+    margin-left: 3%;
+    bottom: -35px;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.pelota-titulo:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+
+.navbar {
+    font-family: "Poppins", sans-serif;
+    margin-left: 2%;
+    list-style-type: none;
+    width: 45%;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+}
+
+
+
+.navbar ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+    margin: 2px 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(255, 246, 235);
+    margin: 5px;
+    font-size: 1.6vh;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+    color: rgb(250, 210, 165);
+    font-size: 1.7vh;
+}
+
+.busqueda {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: end;
+}
+
+.form-busqueda {
+    border: none;
+    color: rgb(255, 246, 235);
+    border-bottom: 1px solid rgb(255, 246, 235);
+    background-color: rgba(255, 255, 255, 0);
+    align-items: flex-end;
+    width: 10vw;
+    margin-bottom: 7px;
+    height: 30%;
+    transition: 0.5s;
+}
+
+
+
+.icono-busqueda {
+    color: rgb(255, 246, 235);
+    font-size: 15px;
+    margin: 5px 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.icono-busqueda:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    color: rgb(250, 210, 165);
+} 
+
+
+.final-header {
+    display: flex;
+    align-items: end;
+    margin-left: 8%;
+}
+
+
+.final-header i {
+    font-size: 1vw;
+    color: rgb(255, 246, 235);
+    margin: 10px 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.final-header i:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    color: rgb(250, 210, 165);
+}
+
+.abrir-menu {
+    display: none;
+}
+
+.menu-hamburguesa {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-input {
+    display: none;
+}
+
+
+
+
+@media (max-width:1024px){
+    .pelota-titulo {
+        display: none;
+    }
+
+    .header-titulo {
+        width: 10%;
+        margin-left: 5%;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .titulo {
+        font-size: 3vw;
+        font-family: 'Changa One', cursive;
+        letter-spacing: 0.9px;
+        color: antiquewhite;
+        transition: 0.5s;
+    }
+
+    .navbar {
+        font-family: "Poppins", sans-serif;
+        margin-left: 10%;
+        list-style-type: none;
+        width: 60%;
+        align-items: center;
+        display: flex;
+        justify-content: flex-center;
+        align-items: end;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: rgb(255, 246, 235);
+        margin: 5px;
+        font-size: 1.3vh;
+        transition: 0.5s;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        float: left;
+        text-align: center;
+        margin: 2px 12px;
+    }
+
+    .busqueda {
+        display: none;
+        
+    }
+
+    .final-header {
+        display: flex;
+        align-items: end;
+        margin-left: 4%;
+    }
+
+    .final-header i {
+        font-size: 1.5vw;
+        color: rgb(255, 246, 235);
+        margin: 10px 10px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .menu-hamburguesa {
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .check-input {
+        display: none;
+    }
+}
+
+
+@media (max-width:768px) {
+
+    .header-titulo {
+        width: 10%;
+        margin-left: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar {
+        margin: auto;
+        font-family: "Poppins", sans-serif;
+        margin-left: 5%;
+        list-style-type: none;
+        width: 75%;
+        align-items: center;
+        display: flex;
+        justify-content: flex-center;
+        align-items: end;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: rgb(255, 246, 235);
+        margin: 2px;
+        font-size: 1.2vh;
+        transition: 0.5s;
+    }
+
+    .final-header {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .final-header i {
+        font-size: 1.5vw;
+        color: rgb(255, 246, 235);
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .menu-hamburguesa {
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .check-input {
+        display: none;
+    }
+}
+
+@media (max-width:425px) {
+    header {
+        background-color: rgb(53, 53, 53);
+        height: 15vh;
+        background-image: url(../assets/imagenes/cancha.jpg);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        left: 0; 
+        top: 0; 
+        position: fixed; 
+    }
+
+    .header-titulo {
+        margin: auto;
+        padding: 3%;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo {
+        font-size: 7vw;
+        font-family: 'Changa One', cursive;
+        letter-spacing: 0.9px;
+        color: antiquewhite;
+        transition: 0.5s;
+    }
+
+    .p-titulo {
+        text-decoration: line-through;
+        font-size: 3vw;
+        font-family: 'Gruppo', cursive;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        color: white;
+    }
+
+    .navbar {      
+        display:none;
+        transition: 0.5s;
+    }
+
+    .navlist {
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        float: left;
+        text-align: center;
+        margin: 2px 5px;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: rgb(255, 246, 235);
+        margin: 0;
+        font-size: 1.2vh;
+        transition: 0.5s;
+    }
+
+    .final-header {
+        display: none;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .final-header i {
+        font-size: 1.5vw;
+        color: rgb(255, 246, 235);
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .menu-hamburguesa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .check-input {
+        display: none;
+    }
+
+    .check-input:checked + .navbar {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        font-family: "Poppins", sans-serif;
+        list-style-type: none;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(61, 61, 61);
+        
+    }
+
+    .desplegable {
+        color: rgb(255, 246, 235);
+        padding: 2%;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+/*-------------------------------MAIN--------------------------------------*/
+
+
+.main-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 87vw;
+    background-image: url(../assets/imagenes/cancha.jpg);
+    margin: 3% auto;      
+}
+
+.imagen-messi {
+    margin: 4%;
+    transition: 0.4s;
+    width: 17vw;
+    overflow:hidden;
+}
+
+.main-top img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+} 
+
+.text-top {
+    width: 40vw;
+    font-size: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 107, 87); 
+}
+
+.text-top h2 {
+    color: antiquewhite;
+    font-size: 2vw;
+
+}
+
+.compra-online {
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.main-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.img-main-botom{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 0 1%;
+}
+
+.img-main-botom:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.text-img-main-bottom{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    color: white;
+}
+
+.text-img-main-bottom h2 {
+    color: antiquewhite; 
+    font-size: 2vw;
+}
+
+
+
+
+.img-main-botom img {
+    width: 27vw;
+    border-radius: 1%;
+}
+
+@media (max-width:1024px) {
+    .imagen-messi {
+        margin: 4%;
+        transition: 0.4s;
+        width: 14vw;
+        overflow:hidden;
+    }
+
+    .text-top {
+        height: 40vh;
+        width: 70%;
+        font-size: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 107, 87); 
+    }
+
+    .compra-online {
+        font-size: 50px;
+        cursor: pointer;
+    }
+
+ 
+}
+
+@media (max-width:768px) {
+    .imagen-messi {
+        margin: 2%;
+        transition: 0.4s;
+        width: 17vw;
+        overflow:hidden;
+    }
+
+    .text-top {
+        height: 40vh;
+        width: 70%;
+        font-size: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 107, 87); 
+    }
+
+    .compra-online {
+        font-size: 50px;
+        cursor: pointer;
+    }  
+    
+    .main-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 87vw;
+        height: 40vh;
+        background-image: url(../assets/imagenes/cancha.jpg);
+        margin: 3% auto;      
+    }
+
+    .main-bottom {
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        height: 30vh;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-main-botom{
+        display: flex;
+        width: 30%;
+        text-align: center;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:425px) {
+
+  
+    
+    .imagen-messi {
+        margin: 2%;
+        transition: 0.4s;
+        width: 17vw;
+        overflow:hidden;
+    }
+
+    .text-top {
+        height: 40vh;
+        width: 70%;
+        font-size: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 107, 87); 
+    }
+
+    .compra-online {
+        font-size: 30px;
+        cursor: pointer;
+    }  
+    
+    .main-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 87vw;
+        height: 40vh;
+        background-image: url(../assets/imagenes/cancha.jpg);
+        margin: 2% auto;    
+        flex-direction: column;  
+    }
+
+    .main-bottom {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 60vh;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-main-botom{
+        margin-bottom: 4%;
+        display: flex;
+        width: 30%;
+        justify-content: center;
+        text-align: center;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .img-main-botom img {
+        width: 300px;
+        height: 140px;
+    }
+
+
+
+    
+    
+}
+
+
+
+
+
+/*--------------------------------------FOOTER-----------------------------------------*/
+
+footer {
+    background-color: rgb(53, 53, 53);
+    height: 30vh;
+    background-image: url(../assets/imagenes/cancha.jpg);
+    display: flex;
+    width: 100%;
+    box-shadow: 1px 2px 5px rgb(53, 53, 53);
+	bottom: 0px; 
+    margin-top: 5%;
+}
+
+.footer-contacto {
+    margin: 0;
+    padding: 2%;
+    border-right: 1px solid lightgray;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contacto h1 {
+    color: rgb(255, 107, 87); 
+    font-size: 4vh;
+    margin: 0px 20px;
+}
+
+.footer-contacto h2 {
+    color: antiquewhite; 
+    margin: 0px 20px;
+    font-size: 3vh;
+}
+
+.contacto {
+    display: flex;   
+}
+
+.datos-contacto h4 {
+    color: rgb(255, 107, 87); 
+    font-size: 2vh;
+}
+
+.datos-contacto p {
+    color: antiquewhite;
+    font-size: 1vh;
+}
+
+.datos-contacto {
+ margin: 2%;
+}
+
+.footer-seguinos {
+    margin: 0;
+    padding: 2%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-seguinos h1 {
+    color: antiquewhite;
+    font-size: 4vh;
+}
+
+.datos-seguinos {
+    color: rgb(255, 107, 87); 
+    font-size: 3vh;
+}
+
+@media (max-width:1024px) {
+    footer {
+        background-color: rgb(53, 53, 53);
+        height: 25vh;
+        background-image: url(../assets/imagenes/cancha.jpg);
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        box-shadow: 1px 2px 5px rgb(53, 53, 53);
+        bottom: 0px; 
+        margin-top: 5%;
+    }
+
+    .footer-contacto {
+        margin: 0;
+        padding: 2%;
+        border-right: 1px solid lightgray;
+        width: 50%;
+        display: flex;
+    }
+
+    .footer-contacto h1 {
+        color: rgb(255, 107, 87); 
+        font-size: 3vh;
+        margin: 0px 10px;
+    }
+
+    .footer-contacto h2 {
+        color: antiquewhite; 
+        margin: 0px 10px;
+        font-size: 2vh;
+    }
+
+    .datos-contacto h4 {
+        color: rgb(255, 107, 87); 
+        font-size: 1.5vh;
+    }
+
+    .datos-contacto {
+        margin: 0%;
+        padding: 2%;
+       }
+
+       .footer-seguinos {
+        margin: 0;
+        padding: 2%;
+        width: 50%;
+        display: flex;
+        
+    }
+
+    .footer-seguinos h1 {
+        color: antiquewhite;
+        font-size: 3vh;
+    }
+
+    .datos-seguinos {
+        color: rgb(255, 107, 87); 
+        font-size: 2vh;
+       display: flex;
+       margin: 2%;
+    }
+
+    .seguinos {
+        display: flex;
+    }
+    
+}
+
+@media (max-width:768px) {
+    footer {
+        background-color: rgb(53, 53, 53);
+        height: 200px;
+        background-image: url(../assets/imagenes/cancha.jpg);
+        display: flex;
+        height: 22vh;       
+        width: 100%;
+        box-shadow: 1px 2px 5px rgb(53, 53, 53);
+        bottom: 0; 
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
+
+    .footer-contacto {
+        margin:0;
+        padding: 2%;
+        border-right: 1px solid lightgray;
+        width: 50%;
+        display: flex;
+    }
+
+    .footer-contacto h1 {
+        color: rgb(255, 107, 87); 
+        font-size: 3vh;
+        margin: 0px 10px;
+    }
+
+    .footer-contacto h2 {
+        color: antiquewhite; 
+        margin: 0px 10px;
+        font-size: 2vh;
+    }
+
+    .datos-contacto h4 {
+        color: rgb(255, 107, 87); 
+        font-size: 1.5vh;
+    }
+
+    .datos-contacto {
+        margin: 0%;
+        padding: 2%;
+       }
+
+       .footer-seguinos {
+        margin: 0;
+        padding: 2%;
+        width: 50%;
+        display: flex;
+        
+    }
+
+    .footer-seguinos h1 {
+        color: antiquewhite;
+        font-size: 3vh;
+    }
+
+    .datos-seguinos {
+        color: rgb(255, 107, 87); 
+        font-size: 2vh;
+       display: flex;
+       margin: 2%;
+    }
+
+    .seguinos {
+        display: flex;
+    }
+    
+}
+
+@media (max-width:425px) {
+    footer {
+        background-color: rgb(53, 53, 53);
+        height: 200px;
+        background-image: url(../assets/imagenes/cancha.jpg);
+        display: flex;
+        height: 22vh;       
+        width: 100%;
+        box-shadow: 1px 2px 5px rgb(53, 53, 53);
+        bottom: 0; 
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
+
+    .footer-contacto {
+        margin:0;
+        padding: 2%;
+        width: 50%;
+        display: flex;
+    }
+
+    .footer-contacto h1 {
+        color: rgb(255, 107, 87); 
+        font-size: 2vh;
+        margin: 0px 10px;
+    }
+
+    .footer-contacto h2 {
+        color: antiquewhite; 
+        margin: 0px 10px;
+        font-size: 1vh;
+    }
+
+    .datos-contacto h4 {
+        color: rgb(255, 107, 87); 
+        font-size: 1.3vh;
+    }
+    .contacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .datos-contacto {
+        margin-left: 4%;
+        padding: 1%;
+       }
+
+       .footer-seguinos {
+        margin: 0;
+        padding: 2%;
+        width: 50%;
+        display: flex;
+        
+    }
+
+    .footer-seguinos h1 {
+        color: antiquewhite;
+        font-size: 2vh;
+    }
+
+    .datos-seguinos {
+        color: rgb(255, 107, 87); 
+        font-size: 1.5vh;
+       display: flex;
+       margin: 2%;
+    }
+
+    .seguinos {
+        display: flex;
+    }
+}
+    
+
+
+
+
+
+
+
+/*------------------PRODUCTOS----------------------*/
+
+
+.indumentaria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.producto:hover {
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+
+
+.img-producto {
+    cursor: pointer;
+    width: 15vw;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+
+.pie-foto {
+font-weight: bolder;
+text-align: center;
+}
+
+.precio {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
+.articulo {
+    margin: 2%;
+}
+
+
+
+/*------------------------VENDE TU CAMISETA----------------------*/
+
+
+.vender {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding: 5%;
+}
+
+.p-vende {
+    margin: 3%;
+}
+
+
+
+
+.boton-enviar {
+    cursor: pointer;
+    background-color: lightgray;
+    margin: auto;
+    width: 25%;
+    border: none;
+    height: 5vh;
+}
+
+/*------------------QUIENES SOMOS ------------------------*/
+
+.nosotros {
+    width: 60vw;
+    margin: auto;
+}
